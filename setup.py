@@ -5,16 +5,12 @@ with open('README.md', 'r', encoding='utf-8') as f:
     long_description = f.read()     
    
 
-__version__ = "0.0.1"
-REPO_NAME = "mongodbconnectorpkg"
-PKG_NAME= "databaseconnectors"
-AUTHOR_USER_NAME = "sujoynitk"
-AUTHOR_EMAIL = "sujoynitk@gmail.com"
+__version__ = "0.0.5"
+REPO_NAME = "python-pkg"
+PKG_NAME= "databaseautomation"
+AUTHOR_USER_NAME = "Vinodjha"
+AUTHOR_EMAIL = "v.jha85@gmail.com"
 
-with open("requirements.txt") as f:
-    reqs = f.read().splitlines()
-    requirements = [r.strip() for r in reqs if r != '-e .']
-    
 setup(
     name=PKG_NAME,
     version=__version__,
@@ -29,5 +25,4 @@ setup(
     },
     package_dir={"": "src"},
     packages=find_packages(where="src"),
-    install_requires=requirements
     )
